@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Home from './components/Home'
 
+
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className='app-main'>
         <Main />
       </div>
+
     </div>
   )
 }
