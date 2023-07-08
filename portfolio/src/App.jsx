@@ -17,6 +17,10 @@ function App() {
         <Main />
       </div>
 
+      <div className='app-footer'>
+        <p>&copy; 2023 Christopher Morales</p>
+      </div>
+
     </div>
   )
 }

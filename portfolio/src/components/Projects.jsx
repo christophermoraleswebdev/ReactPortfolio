@@ -3,7 +3,7 @@ import quoteGenerator from '../assets/quoteGenerator.png'
 import samplePortfolioImage from '../assets/Sample Portfolio.png'
 import weatherApi from '../assets/Weather API.png'
 import devConnect from '../assets/DevConnect.png'
-
+import { motion } from 'framer-motion'
 
 const projectData = [
   { id: 1, title: 'DevConnect', imageUrl: devConnect, siteLink: 'https://www.youtube.com/watch?v=inoaW9zMyDI&t=15s', technologies: 'HTML | CSS | JavaScript | Axios | MongoDB | ExpressJS | Mongoose' },
@@ -15,18 +15,24 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <motion.div 
+      className='projects'
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      transition={{ ease: "easeOut", duration: .75 }}
+    >
       <h2>Projects</h2>
       <div className="gallery">
         {projectData.map((project) => (
           <div key={project.id} className="gallery-item">
-            <img src={project.imageUrl} alt={project.title} />
-            <h4>{project.title} <a href={project.siteLink} target='_blank'><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h4>
+            <a href={project.siteLink} target='_blank'><img src={project.imageUrl} alt={project.title} /></a>
+            <h4>{project.title}</h4>
             <p className='technologies'>{project.technologies}</p>
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
