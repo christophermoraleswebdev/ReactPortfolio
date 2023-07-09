@@ -58,15 +58,23 @@ body {
 .home-title{
   color: #04851b;
   font-size: 20px;
+  width: 90%;
 }
 .home-description {
   width: 90%;
+}
+.home-technologies {
+  color: #04851b;
+  margin-right: 10px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 17px;
 }
 .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 50px;
 }
 .home-col-1 {
@@ -81,22 +89,49 @@ body {
   margin: auto 0;
   flex: 1;
 }
+.homeImg-container {
+  display: flex;
+  justify-content: center;
+}
 .home-col-2 img {
   width: 90%;
-  max-width: 483px;
-  max-height: 500px;
-  border-radius: 15px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 95px;
   margin-left: 5%;
+}
+.icons-container {
+  display: flex;
+  justify-content: center;
+}
+.home-icons, 
+.resumeButton-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.home-icons a {
+  font-size: 30px;
+  margin-right: 15px;
+  transition: transform .5s;
+}
+.home-icons a:hover {
+  transform: translateY(-5px);
 }
 .resume-button {
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #04851b;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
+  transition: transform .5s;
+  margin-top: 3px;
+}
+.resume-button:hover {
+  transform: translateY(-5px);
 }
 /* Tech Stack */
 .tech-stack {
@@ -170,7 +205,7 @@ body {
   border: 1px solid white;
   width: 200px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 15px;
   text-align: center;
 }
 .gallery-item img{
@@ -228,10 +263,6 @@ body {
 .social-icons a:hover {
   color: #04851b;
   transform: translateY(-5px);
-}
-#home-icons {
-  margin-left: 20px;
-  margin-top: 5px;
 }
 .contact-right form {
   width: 100%;
@@ -296,7 +327,7 @@ form input, form textarea {
     flex-direction: column;
   }
   .home-title {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: -40px;
   }
   .home-col-1 h1 {
