@@ -9,7 +9,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(18, 17, 17);
+  background-color: #0B2027;
   height: 100%;
 }
 .app {
@@ -23,7 +23,7 @@ body {
 .app-header {
   margin-bottom: 20px;
   height: 30px;
-  background-color: rgb(18, 17, 17);
+  background-color: #0B2027;
   box-shadow: 0px 2px 4px 0px rgba(249, 248, 248, 0.1);
 }
 .nav-logo{
@@ -56,15 +56,16 @@ body {
   color: white;
 }
 .home-title{
-  color: #04851b;
+  color: #70A9A1;
   font-size: 20px;
   width: 90%;
 }
+
 .home-description {
   width: 90%;
 }
 .home-technologies {
-  color: #04851b;
+  color: #70A9A1;
   margin-right: 10px;
   text-decoration: underline;
   font-weight: bold;
@@ -83,10 +84,11 @@ body {
 }
 .home-col-1 h1 {
   font-size: 40px;
+  color: #CFD7C7;
 }
 .home-col-2 {
   flex-basis: 35%;
-  margin: auto 0;
+  /* margin: auto 0; */
   flex: 1;
 }
 .homeImg-container {
@@ -99,6 +101,8 @@ body {
   max-height: 300px;
   border-radius: 95px;
   margin-left: 5%;
+  padding: 5px;
+  border: 2px solid #70A9A1;
 }
 .icons-container {
   display: flex;
@@ -115,12 +119,15 @@ body {
   margin-right: 15px;
   transition: transform .5s;
 }
+.home-icons i:hover {
+  color: #40798C;
+}
 .home-icons a:hover {
   transform: translateY(-5px);
 }
 .resume-button {
   padding: 10px 15px;
-  background-color: #04851b;
+  background-color: #40798C;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -196,13 +203,16 @@ body {
   color: white;
   text-align: center;
 }
+.projects p {
+  color: #70A9A1;
+}
 .gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .gallery-item {
-  border: 1px solid white;
+  border: 1.5px solid #70A9A1;
   width: 200px;
   border-radius: 10px;
   margin: 15px;
@@ -212,11 +222,12 @@ body {
   width: 200px;
   border-radius: 10px 10px 0 0;
   transition: opacity transform .5s ease-out;
+  border-bottom: 1px solid #70A9A1;
 }
 .gallery-item:hover {
   opacity: .7;
   transform: scale(1.05);
-  border: 2px solid #04851b;
+  border: 2px solid #70A9A1;
   cursor: pointer;
 }
 .gallery-item p {
@@ -237,7 +248,7 @@ body {
 }
 .contact-left h3 {
   margin-bottom: 0;
-  color: #04851b;
+  color: #70A9A1;
 }
 .contact-right {
   flex-basis: 50%;
@@ -261,7 +272,7 @@ body {
   transition: transform .5s;
 }
 .social-icons a:hover {
-  color: #04851b;
+  color: #70A9A1;
   transform: translateY(-5px);
 }
 .contact-right form {
@@ -271,7 +282,7 @@ form input, form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background: #F6F1D1;
   padding: 10px;
   margin: 15px 0; 
   color: white;
@@ -284,7 +295,7 @@ form input, form textarea {
   margin-top: 20px;
   text-decoration: none;
   cursor: pointer;
-  background-color: green;
+  background-color: #40798C;
   border: 1px solid rgb(159, 159, 159);
   border-radius: 7px;
   color: white;
@@ -301,7 +312,7 @@ form input, form textarea {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(18, 17, 17);
+  background-color: #0B2027;
   box-shadow: 0px -1px 2px 0px rgba(249, 248, 248, 0.1);
 }
 

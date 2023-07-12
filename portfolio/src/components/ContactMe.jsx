@@ -1,14 +1,8 @@
-import { motion } from 'framer-motion'
+
 
 const ContactMe = () => {
   return (
-    <motion.div 
-      className="contact-container"
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}} 
-      transition={{ ease: "easeOut", duration: .75 }} 
-    >
+    <div className="contact-container">
       <div className="row">
         <div className="contact-left">
           <h1 class="sub-title">Contact Me</h1>
@@ -31,7 +25,7 @@ const ContactMe = () => {
           </form>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

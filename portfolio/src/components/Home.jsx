@@ -1,21 +1,29 @@
 import React from "react"
-import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect'
 
 const Home = () => {
+      
+
   return (
-      <motion.div 
-            className="home-container"
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
-            transition={{ ease: "easeOut", duration: .75 }}
-      >
+      <div className="home-container">
             <div className="row">
                   <div className="home-col-1">
                         <p className="home-title">Full-Stack Developer | Software Engineer</p>
-                        <h1>Hi, I'm Chris Morales</h1>
+                        <h1>
+                              Hi,  
+                              <span className="typewriter">
+                                    <Typewriter
+                                          options={{
+                                          strings: ["I'm Chris Morales", " I'm a Developer", "I'm a Designer", "I'm a Team Player"],
+                                          autoStart: true,
+                                          loop: true,
+                                          delay: 100,
+                                          }}
+                                    />
+                              </span>
+                        </h1>
                         <p className="home-description">
-                        I'm a Software Engineer who loves creating user-friendly websites and applications. With a background in education and finance, I bring a fresh perspective to problem-solving. I approach every project with a positive attitude and a commitment to learning the latest technology trends. My goal is to use my problem-solving, organization, and continuous learning skills to make a significant impact in cutting-edge software engineering.
+                        I'm a passionate Software Engineer with expertise in creating user-friendly websites and applications. Combining my educational and financial background, I bring a fresh perspective to problem-solving and strive to make a significant impact in cutting-edge software engineering.
                         </p><br />
                         <p> <span className="home-technologies">Front-End Technologies:</span> 
                         HTML || CSS || Javascript || React || Next.js || Bootstrap.
@@ -68,7 +76,7 @@ const Home = () => {
             </div>
 
             
-      </motion.div>
+      </div>
   )
 }
 
