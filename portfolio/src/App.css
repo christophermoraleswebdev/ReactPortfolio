@@ -222,7 +222,6 @@ body {
   width: 200px;
   border-radius: 10px 10px 0 0;
   transition: opacity transform .5s ease-out;
-  border-bottom: 1px solid #70A9A1;
 }
 .gallery-item:hover {
   opacity: .7;
@@ -232,7 +231,7 @@ body {
 }
 .gallery-item p {
   font-size: 12px;
-  color: white;
+  color: #70A9A1;
 }
 .technologies {
   margin: 5px 10px;
@@ -279,6 +278,7 @@ body {
   width: 100%;
 }
 form input, form textarea {
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   border: 0;
   outline: none;
@@ -349,5 +349,9 @@ form input, form textarea {
   }
   .home-description {
     width: 100%;
+  }
+  /* Contact Me */
+  .contact-email {
+    font-size: 14px;
   }
 }

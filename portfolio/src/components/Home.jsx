@@ -25,15 +25,15 @@ const Home = () => {
                         <p className="home-description">
                         I'm a passionate Software Engineer with expertise in creating user-friendly websites and applications. Combining my educational and financial background, I bring a fresh perspective to problem-solving and strive to make a significant impact in cutting-edge software engineering.
                         </p><br />
-                        <p> <span className="home-technologies">Front-End Technologies:</span> 
+                        <p> <span className="home-technologies">Front-End Technologies:</span> <br />
                         HTML || CSS || Javascript || React || Next.js || Bootstrap.
                         </p><br />
-                        <p><span className="home-technologies">Back-End Technologies:</span> 
+                        <p><span className="home-technologies">Back-End Technologies:</span> <br />
                         Python || Node.js || Django || MongoDB || Mongoose || PostgreSQL || Express.js
                         </p><br />
                         <p>
-                        <span className="home-technologies">Design Software:</span> 
-                        Figma
+                        <span className="home-technologies">Adjacent Technologies: </span> <br />
+                        Trello || GitHub || Railway || Netlify || Figma
                         </p>
                         {/* <div className="tech-stack">
                               <h2>Technologies Used:</h2>
