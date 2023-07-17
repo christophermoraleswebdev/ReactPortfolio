@@ -10,11 +10,11 @@ const Home = () => {
                   <div className="home-col-1">
                         <p className="home-title">Full-Stack Developer | Software Engineer</p>
                         <h1>
-                              Hi,  
+                              Hi, I'm  
                               <span className="typewriter">
                                     <Typewriter
                                           options={{
-                                          strings: ["I'm Chris Morales", " I'm a Developer", "I'm a Designer", "I'm a Team Player"],
+                                          strings: ["Chris Morales", "a Developer", "a Designer", "a Team Player"],
                                           autoStart: true,
                                           loop: true,
                                           delay: 100,

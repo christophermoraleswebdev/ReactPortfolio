@@ -1,6 +1,11 @@
-
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactMe = () => {
+  const [state, handleSubmit] = useForm("meqboqwa");
+  if (state.succeeded) {
+      return <p>Thank you for your interest! 😀</p>;
+  }
+  
   return (
     <div className="contact-container">
       <div className="row">
@@ -17,12 +22,45 @@ const ContactMe = () => {
           <a href="https://docs.google.com/document/d/1qO68bZuLZ0ftlELrCv_DMlp9S5dAp8oJNBVvcyPvWfo/edit?usp=sharing" target="_blank" class="btn resume-btn">Resume</a>
         </div>
         <div className="contact-right">
-          <form className="form">
-            <input type="text" placeholder="Your Name..." required/>
-            <input type="email" placeholder="Email..." required/>
-            <textarea rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" className="btn">Submit</button>
-          </form>
+        <form onSubmit={handleSubmit} className='form'>
+          <input
+            id="name"
+            type="text" 
+            name="name"
+            placeholder='Name'
+          />
+          <ValidationError 
+            prefix="Name" 
+            field="name"
+            errors={state.errors}
+          />
+          <input
+            placeholder="Email..."
+            required
+            id="email"
+            type="email" 
+            name="email"
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+          />
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder='Your Message...'
+          />
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+          />
+          <button type="submit" disabled={state.submitting} className='btn'>
+            Submit
+          </button>
+        </form>
         </div>
       </div>
     </div>
