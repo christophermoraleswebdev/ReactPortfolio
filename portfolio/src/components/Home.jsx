@@ -59,7 +59,7 @@ const Home = () => {
                   </div>
                   <div className="home-col-2">
                         <div className="homeImg-container">
-                              <img src="src/assets/aboutMe.png"/>
+                              <img src="src/assets/aboutme.png"/>
                         </div>
                         <div className="icons-container">
                               <div class="home-icons">
