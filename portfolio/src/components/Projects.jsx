@@ -13,7 +13,7 @@ const projectData = [
   { id: 1, title: 'Should I Buy', imageUrl: shouldIBuyImage, siteLink: 'https://should-i-buy.netlify.app/', technologies: 'HTML | CSS | JavaScript | Axios' },
   { id: 2, title: 'ProjectWRX', imageUrl: projectWRX, siteLink: 'https://projectwrx.netlify.app/', technologies: 'MERN Stack' },
   { id: 3, title: 'Crafted Cocktails', imageUrl: craftedCocktails, siteLink: 'https://cocktails-recipes-ccm.netlify.app/', technologies: 'React | Axios | CSS' },
-  { id: 4, title: 'TickitGuru', imageUrl: TickitGuru, siteLink: 'https://tick-it-production.up.railway.app/', technologies: 'PostgreSQL | Django | React | Bootstrap' },
+  { id: 4, title: 'TickitGuru', imageUrl: TickitGuru, siteLink: 'https://tickitguru.netlify.app/', technologies: 'PostgreSQL | Django | React | Bootstrap' },
   { id: 5, title: 'DevConnect', imageUrl: devConnect, siteLink: 'https://www.youtube.com/watch?v=inoaW9zMyDI&t=15s', technologies: 'MERN Stack' },
   { id: 6, title: 'React Nucamp', imageUrl: reactNucamp, siteLink: 'https://react-nucamp-project.firebaseapp.com/', technologies: 'React | SASS | Firebase' },
   { id: 7, title: 'Sample Portfolio', imageUrl: samplePortfolioImage, siteLink: 'https://sample-portfolio-christopher-morales.netlify.app/#', technologies: 'HTML | CSS | JavaScript' },
