@@ -6,17 +6,19 @@ import devConnect from '../assets/DevConnect.png'
 import reactNucamp from '../assets/reactNucamp.png'
 import projectWRX from '../assets/projectWRX.png'
 import craftedCocktails from '../assets/craftedCocktails.png'
+import TickitGuru from '../assets/TickitGuru.png'
 
 
 const projectData = [
   { id: 1, title: 'Should I Buy', imageUrl: shouldIBuyImage, siteLink: 'https://should-i-buy.netlify.app/', technologies: 'HTML | CSS | JavaScript | Axios' },
   { id: 2, title: 'ProjectWRX', imageUrl: projectWRX, siteLink: 'https://projectwrx.netlify.app/', technologies: 'MERN Stack' },
   { id: 3, title: 'Crafted Cocktails', imageUrl: craftedCocktails, siteLink: 'https://cocktails-recipes-ccm.netlify.app/', technologies: 'React | Axios | CSS' },
-  { id: 4, title: 'Weather App', imageUrl: weatherApi, siteLink: 'https://weatherapichristophermorales.netlify.app/', technologies: 'HTML | CSS | JavaScript | Axios' },
+  { id: 4, title: 'TickitGuru', imageUrl: TickitGuru, siteLink: 'https://tick-it-production.up.railway.app/', technologies: 'PostgreSQL | Django | React | Bootstrap' },
   { id: 5, title: 'DevConnect', imageUrl: devConnect, siteLink: 'https://www.youtube.com/watch?v=inoaW9zMyDI&t=15s', technologies: 'MERN Stack' },
   { id: 6, title: 'React Nucamp', imageUrl: reactNucamp, siteLink: 'https://react-nucamp-project.firebaseapp.com/', technologies: 'React | SASS | Firebase' },
   { id: 7, title: 'Sample Portfolio', imageUrl: samplePortfolioImage, siteLink: 'https://sample-portfolio-christopher-morales.netlify.app/#', technologies: 'HTML | CSS | JavaScript' },
   { id: 8, title: 'Quote Generator', imageUrl: quoteGenerator, siteLink: 'https://christophermoraleswebdev-quotes.netlify.app/', technologies: 'HTML | CSS | JavaScript' },
+  { id: 9, title: 'Weather App', imageUrl: weatherApi, siteLink: 'https://weatherapichristophermorales.netlify.app/', technologies: 'HTML | CSS | JavaScript | Axios' },
 ]
 
 const Projects = () => {
