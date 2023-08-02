@@ -62,13 +62,13 @@ const Home = () => {
                               <img src="https://i.imgur.com/Lm4ot6x.png"/>
                         </div>
                         <div className="icons-container">
-                              <div class="home-icons">
-                                    <a href="https://github.com/christophermoraleswebdev" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
-                                    <a href="https://www.linkedin.com/in/christopher-moralesse/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                              <div className="home-icons">
+                                    <a href="https://github.com/christophermoraleswebdev" target="_blank"><i className="fa-brands fa-github fa-lg"></i></a>
+                                    <a href="https://www.linkedin.com/in/christopher-moralesse/" target="_blank"><i className="fa-brands fa-linkedin fa-lg"></i></a>
                               </div>
                               <div className="resumeButton-container">
                                     <a href="https://docs.google.com/document/d/1qO68bZuLZ0ftlELrCv_DMlp9S5dAp8oJNBVvcyPvWfo/edit?usp=sharing" target="_blank">
-                                          <button class="resume-button">View Resume</button>
+                                          <button className="resume-button">View Resume</button>
                                     </a>
                               </div>
                         </div>

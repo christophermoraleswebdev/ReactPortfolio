@@ -210,6 +210,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 .gallery-item {
   border: 1.5px solid #70A9A1;
@@ -356,5 +357,13 @@ form input {
   /* Contact Me */
   .contact-email {
     font-size: 14px;
+  }
+  /* Nav */
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-logo {
+    display: none;
   }
 }
