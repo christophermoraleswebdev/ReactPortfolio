@@ -34,6 +34,9 @@ body {
   color: white;
   font-weight: 100;
 }
+.nav-logo-mobile {
+  display: none;
+}
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -361,9 +364,12 @@ form input {
   /* Nav */
   .nav-links {
     display: flex;
-    justify-content: space-around;
   }
   .nav-logo {
     display: none;
+  }
+  .nav-logo-mobile {
+    display: block;
+    color: #70A9A1;
   }
 }
