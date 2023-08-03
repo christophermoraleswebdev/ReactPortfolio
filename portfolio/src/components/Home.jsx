@@ -67,7 +67,7 @@ const Home = () => {
                                     <a href="https://www.linkedin.com/in/christopher-moralesse/" target="_blank"><i className="fa-brands fa-linkedin fa-lg"></i></a>
                               </div>
                               <div className="resumeButton-container">
-                                    <a href="https://docs.google.com/document/d/1qO68bZuLZ0ftlELrCv_DMlp9S5dAp8oJNBVvcyPvWfo/edit?usp=sharing" target="_blank">
+                                    <a href="https://docs.google.com/document/d/1LdG58ZGiaCBITNQEHK9Nn0pepCMqLBQuo89YNxEpL9M/edit?usp=sharing" target="_blank">
                                           <button className="resume-button">View Resume</button>
                                     </a>
                               </div>
