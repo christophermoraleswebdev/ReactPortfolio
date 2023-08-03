@@ -19,7 +19,7 @@ const ContactMe = () => {
             <a href="https://github.com/christophermoraleswebdev" target="_blank"><i className="fa-brands fa-github fa-lg"></i></a>
             <a href="https://www.linkedin.com/in/christopher-moralesse/" target="_blank"><i className="fa-brands fa-linkedin fa-lg"></i></a>
           </div>
-          <a href="https://docs.google.com/document/d/1LdG58ZGiaCBITNQEHK9Nn0pepCMqLBQuo89YNxEpL9M/edit?usp=sharing">Resume</a>
+          <a href="https://docs.google.com/document/d/1LdG58ZGiaCBITNQEHK9Nn0pepCMqLBQuo89YNxEpL9M/edit?usp=sharing" target="_blank" className="btn resume-btn">Resume</a>
         </div>
         <div className="contact-right">
         <form onSubmit={handleSubmit} className='form'>
