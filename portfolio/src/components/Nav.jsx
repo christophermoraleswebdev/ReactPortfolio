@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="logo-container">
-        <h4>Christopher Morales</h4>
+        <h4>Chris' Portfolio</h4>
       </div>
 
       {/* Main Menu */}
