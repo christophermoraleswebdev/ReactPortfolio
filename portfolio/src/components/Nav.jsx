@@ -1,16 +1,35 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
+const Navbar = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
 
-const Nav = () => {
-      return (
-            <div className='nav-links'>
-                  <h1 className='nav-logo'>Christopher Morales</h1>
-                  <h4 className='nav-logo-mobile'>CCM</h4>
-                  <Link className='nav-link' to='/'>Home</Link>
-                  <Link className='nav-link' to='/projects'>Projects</Link>
-                  <Link className='nav-link' to='/contactMe'>Contact Me</Link>
-            </div>
-      )
-}
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
 
-export default Nav
+  return (
+    <div className="navbar-container">
+      <div className="logo-container">
+        <h4>Christopher Morales</h4>
+      </div>
+
+      {/* Main Menu */}
+      <div className={`menu ${menuVisible ? 'mobile-menu-active' : ''}`}>
+            <Link to='/'>Home</Link>
+            <Link to='/projects'>Projects</Link>
+            <Link to='/contactMe'>Contact Me</Link>
+      </div>
+
+      {/* Hamburger Menu */}
+      <i className="fa-solid fa-bars hamburger-menu" onClick={toggleMenu}></i>
+      <div className={`hamburger-menu-container ${menuVisible ? 'active' : ''}`}>
+            <Link to='/'>Home</Link>
+            <Link to='/projects'>Projects</Link>
+            <Link to='/contactMe'>Contact Me</Link>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
