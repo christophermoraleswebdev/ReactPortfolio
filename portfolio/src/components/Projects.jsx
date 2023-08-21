@@ -8,8 +8,15 @@ import projectWRX from '../assets/projectWRX.png'
 import craftedCocktails from '../assets/craftedCocktails.png'
 import TickitGuru from '../assets/TickitGuru.png'
 import dishit from '../assets/dish-it.png'
+import SouthernPro from '../assets/Southern Pro.png'
+import Legacy from '../assets/Legacy.png'
 
 
+const projectData1 = [
+  { id: 1, title: 'Southern Pro R&C', imageUrl: SouthernPro, siteLink: 'https://sprcroofing.com/', technologies: 'React | CSS | EmailJS' },
+  { id: 2, title: 'Legacy', imageUrl: Legacy, siteLink: 'https://legacy-production-9d35.up.railway.app/', technologies: 'React | CSS | EmailJS' },
+  
+]
 const projectData = [
   { id: 1, title: 'Dish-It', imageUrl: dishit, siteLink: 'https://dish-it.up.railway.app/', technologies: 'MERN Back-end | React | React Bootstrap' },
   { id: 2, title: 'Should I Buy', imageUrl: shouldIBuyImage, siteLink: 'https://should-i-buy.netlify.app/', technologies: 'HTML | CSS | JavaScript | Axios' },
@@ -27,7 +34,18 @@ const projectData = [
 const Projects = () => {
   return (
     <div className='projects'>
-      <h2>Projects</h2>
+      <h2>Professional Projects</h2>
+      <p>Click on the project to be taken to the LIVE SITE</p>
+      <div className="gallery">
+        {projectData1.map((project) => (
+          <div key={project.id} className="gallery-item">
+            <a href={project.siteLink} target='_blank'><img src={project.imageUrl} alt={project.title} /></a>
+            <h4>{project.title}</h4>
+            <p className='technologies'>{project.technologies}</p>
+          </div>
+        ))}
+      </div>
+      <h2>Projects Built Through My Course Work</h2>
       <p>Click on the project to be taken to the LIVE SITE</p>
       <div className="gallery">
         {projectData.map((project) => (

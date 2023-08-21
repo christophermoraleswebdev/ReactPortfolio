@@ -211,6 +211,9 @@ body {
   color: white;
   text-align: center;
 }
+.projects h2 {
+  margin-top: 20px;
+}
 .projects p {
   color: #70A9A1;
 }
